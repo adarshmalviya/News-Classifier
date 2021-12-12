@@ -4,4 +4,3 @@ gunicorn
 flask
 sklearn
 nltk
-pickle
