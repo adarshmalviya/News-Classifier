@@ -1,0 +1,15 @@
+.col-md-5{
+    margin-top: 2px;
+    box-shadow:  -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.774);
+}
+.btn-warning{
+    margin-left: 80px;
+}
+p.design_name{
+    font-size:  large;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}

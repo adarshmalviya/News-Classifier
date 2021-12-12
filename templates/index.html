@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename= 'CSS/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename= 'CSS/response.css') }}"
+        media="screen and (max-width: 600px)">
+    <title>News Classification</title>
+</head>
+{% block body %}
+
+<body>
+    <header>
+        <div class="predi">
+            {{prediction_text}}
+        </div>
+    </header>
+    <main>
+
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="container">
+                <div class="col">
+                    <div class="row-md-7">
+                        <h1 class="text-center"> News Classifier </h1>
+                        <p class="text-center">
+                            You must have seen the news divided into categories when you go to a news website. Some of
+                            the popular categories that you’ll see on almost any news website are business, science, entertainment,
+                            and sports. This model was built using NLP and Machine Learning for classifying the news articles by their heading.
+                            The Model has came up with an accuracy of 91.4 %
+                        </p>
+                        <div class="list row">
+                        <ul>
+                            <li>Entertiment News</li>
+                            <li>Business News</li>
+                            <li>Science and Technology News</li>
+                            <li>Sports News</li>
+                        </ul>
+                    </div>
+
+                    </div>
+                    <div class="row-md-5 my-5">
+                        <div class="row">
+                            <label class="label col-md-2 control-label"> <b> News </b> </label>
+                            <div class="col-md-6">
+                                <textarea type="text" class="form-control" name="text" placeholder="News Heading"
+                                    required="required"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="button_div">
+                            <button type="submit" class="btn btn-success ">Predict</button>
+                            <button type="reset" class="btn btn-danger">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <div class="final">
+        <footer>
+            <div class="footerlogo">
+                <a href="mailto:adarsh.malviya22@gmail.com" target="_blank"><img class="icon my-2"
+                        src="{{url_for('static', filename='images/gmail_icon.webp') }}"></a>
+                <a href="https://github.com/adarshmalviya" target="_blank"><img class="icon"
+                        src="{{url_for('static', filename='images/white_github.webp') }}"></a>
+                <a href="https://www.linkedin.com/in/adarsh-malviya-8379a5196" target="_blank"><img class="icon"
+                        src="{{ url_for('static', filename='images/linkedin_logo.webp') }}"></a>
+                <a href="https://www.instagram.com/adarsh.malviya_" target="_blank"><img class="icon"
+                        src="{{ url_for('static', filename= 'images/instagram_logo.webp') }}"></a>
+            </div>
+            <p class="design_name">Designed By Adarsh Malviya © 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+{% endblock %}

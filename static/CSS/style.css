@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("../images/news.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: new time roman;     
+    height: 100%;   
+}
+.row{
+    background: transparent;
+    background:rgba(158, 71, 71, 0);
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+}
+p{
+    font-size: 1.5rem;
+    color:white;
+}
+h3{
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+    
+}
+.predi {
+    background: transparent;
+    background: rgba(0, 0, 0, 0.774);
+    margin: auto;
+    text-align: center;
+    font-family: new time roman;
+    color: white;
+    font-size: xx-large;
+    width: 40%;
+    box-shadow: -1px 1px 60px 10px black;
+    margin-top: 10px;
+  }
+.glyphicon-pencil{
+    font-size: 35px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+}
+.col-md-5{
+    margin-top: 5px;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.774);
+
+}
+.label{
+    font-weight: normal;
+    margin-top: 5px;
+    color: white;
+    font-size: 1.5rem;
+}
+.form-control{
+    background: white;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    height: 35px;
+    color: white;
+}
+.form {
+	display:flex;
+	justify-content: center;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+}
+.btn-success{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.btn-danger{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+}
+
+
+.design_name{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: new time roman;
+}
+
+.footerlogo{
+    text-align: center;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+header{
+    margin: auto;
+    padding: 10px;
+}
+main{
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 23px;
+}
+
+p.design_name{
+    margin: 0px 0px 0px ;
+}
+footer{
+    background: transparent;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.774);
+}
