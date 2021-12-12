@@ -4,5 +4,4 @@ gunicorn
 flask
 sklearn
 nltk
-string
 pickle
