@@ -1,2 +1,12 @@
 # News-Classifier
-You must have seen the news divided into categories when you go to a news website. Some of the popular categories that you’ll see on almost any news website are business, science, entertainment, and sports. This model was built using NLP and Machine Learning for classifying the news articles by their heading. The Model has came up with an accuracy of 91.4 %
+
+Webapp Link :-> https://newsclassifier-nlp.herokuapp.com 
+
+The News Classifer webapp built using concepts of NLP(Natural Language Processing) and Machine Learning with an accuracy of 91.4 %.
+The Model can classify :
+- Entertiment News
+- Business News
+- Technology News
+- Sports News
+
+![image](https://user-images.githubusercontent.com/56603301/145751059-bc9e4256-d84e-4d51-818a-56ee29da69ed.png)
