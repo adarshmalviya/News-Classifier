@@ -1,1 +1,1 @@
-stopwords
+wordnet
