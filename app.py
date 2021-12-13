@@ -44,7 +44,7 @@ def predict():
     elif output == 1:
         return render_template('index.html', prediction_text="Entertainment News")
     elif output == 2:
-        return render_template('index.html', prediction_text="Science News")
+        return render_template('index.html', prediction_text="Technology News")
     elif output == 3:
         return render_template('index.html', prediction_text="Sports News")
 
