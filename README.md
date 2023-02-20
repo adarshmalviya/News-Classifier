@@ -1,7 +1,5 @@
 # News-Classifier
 
-Webapp Link :-> https://newsclassifier-nlp.herokuapp.com 
-
 The News Classifier web app was built using concepts of NLP(Natural Language Processing) and Machine Learning with an accuracy of 91.4 %
 The Model can classify :
 - Entertiment News
